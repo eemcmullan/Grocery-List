@@ -25,7 +25,7 @@ SECRET_KEY = '79n=^$8$b9pybxu1p)!2!^bc#8&9^l@@(cne^sf%lu$-hebn@t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['emmctododj.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['emgroceries.herokuapp.com', 'localhost']
 
 
 # Application definition
