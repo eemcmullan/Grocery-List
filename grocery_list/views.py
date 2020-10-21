@@ -13,7 +13,7 @@ def home(request):
 		if form.is_valid():
 			form.save()
 			all_items = List.objects.all 
-			messages.success(request, ('Item added!'))
+			# messages.success(request, ('Item added!'))
 			return render(request, 'home.html', {'all_items': all_items})
 
 	else:
@@ -26,7 +26,7 @@ def about(req):
 def delete(request, list_id):
 	item = List.objects.get(pk=list_id)
 	item.delete() 
-	messages.success(request, ('Item has been deleted!'))
+	# messages.success(request, ('Item has been deleted!'))
 	return redirect('home')
 
 def cross_off(request, list_id):
@@ -49,7 +49,7 @@ def edit(request, list_id):
 
 		if form.is_valid():
 			form.save()
-			messages.success(request, 'Item edited!')
+			# messages.success(request, 'Item edited!')
 			return redirect('home')
 
 	else:
